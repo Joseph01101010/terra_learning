@@ -16,3 +16,9 @@ provider "azurerm" {
   tenant_id       = "c66b6765-b794-4a2b-84ed-845b341c086a"
 }
 
+# Test multiple providers
+
+provider "azurerm" {
+    features {}
+    alias = "provider2-northeurope"
+}
